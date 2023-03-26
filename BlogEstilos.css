@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    font-family:'Arial';
+}
+
+nav{
+    background-color: #174C4F;
+    height: 100px;
+    width: 100%;
+}
+
+.img-logo{
+    height: 90px;
+    width: 165px;
+    float: left;
+}
+
+.Inicio{
+    color: #ffff;
+    font-family: 'Arial';
+    font-size: 20px;
+}
+.Inicio:hover{
+    color:aquamarine
+}
+
+body{
+    background-color: #F2F1EF;
+}
+
+.Monumento{
+    width: 100vw;    
+    height: 75vh;
+}
+
+.Titulo1{
+    text-align: center;
+    color: black;
+}
+
+.Contenido1{
+    text-align: center;
+    color: black;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.Titulo2{
+    text-align: center;
+    color: black;
+}
+
+.Nota2{
+    text-align: center;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.Tren{
+    width: 350px;
+    height: 325px;
+}
+
+.Nota3{
+    text-align: center;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.Amazon{
+    width: 350px;
+    height: 325px;
+}
