@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="MisEstilos.css">
     <title>Mi página web</title>
 </head>
+
+<script type="text/javascript">
+    window.onload=function(){
+        alert('Bienvenidos a AC inmobiliaria');
+        }
+</script>
 
 <header>
     <nav style="margin: 0 auto;">
@@ -41,15 +48,42 @@
 </header>
 
 <body>
-<div style="text-align: center;">
+<div style="text-align: center;" data-aos="zoom-in-up" data-aos-duration="1000">
    <table style="margin: 0 auto;" class="portada">
     <tr>
         <td>
             <p><b><h1>Inviertir en Yucatán: Una opción segura para su futuro financiero</h1></b></p>
-            <p><h3>Lotes de inversión con ubicaciones estratégicas de las playas costeras del estado de Yucatán. </h3></p>
+            <p><h2>Lotes de inversión con ubicaciones estratégicas de las playas costeras del estado de Yucatán. </h2></p>
+            <p><h2>Regístrate para más información</h2></p>
+            <button id="mi-boton">Haz clic aquí</button>
+
+            <div id="formulario" style="display: none;">
+                <form>
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre">
+              
+                  <label for="telefono">Teléfono:</label>
+                  <input type="tel" id="telefono">
+              
+                  <label for="correo">Correo electrónico:</label>
+                  <input type="email" id="correo">
+              
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+              
+              <script>
+                  const boton = document.getElementById("mi-boton");
+                  const formulario = document.getElementById("formulario");
+              
+                  boton.addEventListener("click", function() {
+                      formulario.style.display= 'block';
+                  });
+              
+              </script>
         </td>
         <td>
-            <img src="Img/Portada1.PNG" height="730"; width="700"; class="imgportada">  
+            <img src="Img/Portada1.PNG" class="imgportada" align="right">
         </td>
     </tr>
    </table>
@@ -86,15 +120,15 @@
 <br>
 
 <a id="desarrollos">
-<div style="text-align: center;">
+<div style="text-align: center;" data-aos="zoom-out" data-aos-duration="1000">
     <p><b><h2>Conoce los desarrollos</h2></b></p>
     <p><h3>¡Descubre la mejor opción de inverisón que se adapte a tus necesidades!</h3></p><br>
     <table class="desarrollos"; style="margin: 0 auto;">
         <tr>
-            <td><a href="arenales.html"><img src="Img/Arenales-portada.jpg" class="arenales1" alt="Imagen1" height="400px"; width="400px";>
+            <td><a href="arenales.html"><img src="Img/Arenales-portada.jpg" class="arenales1" alt="Imagen1" height="300px"; width="300px";>
             <p><h4>Arenales</h4></p></td></a>
     
-            <td><img src="Img/Santamar-portada.jpg" class="santamar1" alt="Imagen2" height="400px"; width="400px";>
+            <td><img src="Img/Santamar-portada.jpg" class="santamar1" alt="Imagen2" height="300px"; width="300px";>
             <p><h4>Santamar</h4></p></td>
         </tr>
 
@@ -103,21 +137,27 @@
 
 <br>
 <a id="blog">
-<div style="text-align: center;">
+<div style="text-align: center;" data-aos="zoom-out" data-aos-duration="1000">
     <p><b><h2>Visita el Blog</h2></b></p><br>
     <table class="Blog"; style="margin: 0 auto;">
         <tr>
-            <td> <a href="blog1.html"><img src="Img/Blog.PNG" class="nota1" alt="Imagen1" height="400px"; width="400px">
-            <p><h4>¿Por qué invertir en Yucatán?</h4></p></td></a>
+            <td> <a href="blog1.html"><img src="Img/Blog.PNG" class="nota1" alt="Imagen1" height="300px"; width="300px">
+            <p><h5>¿Por qué invertir en Yucatán?</h5></p></td></a>
     
-            <td><a href="blog2.html"><img src="Img/Blog2.PNG" class="nota2" alt="Imagen2" height="400px"; width="400px">
-            <p><h4>Proyectos importantes en Yucatán</h4></p></td></a>
+            <td><a href="blog2.html"><img src="Img/Blog2.PNG" class="nota2" alt="Imagen2" height="300px"; width="300px">   
+            <p><h5>Proyectos importantes en Yucatán</h5></p></td></a>
         </tr>
     </table>
 </div></a><br>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
-<footer>
+<footer >
 <a id="contacto">
 <div class="contacto" style="text-align: left;">
     <table style="margin: 0 auto;">
@@ -126,11 +166,11 @@
             <td><b><h2>Ubicación</h2></b></td>
         </tr>
         <tr>
-            <td>
+            <td class="datos">
                 <p>
                     Si quieres una asesoría personalizada y conocer los planes de financiamiento, no dudes en dejar tus datos.De esa manera, me pondré en contacto contigo. 
                 </p>
-                <li align="left">
+                <li align="left" >
                     <label for="name"><b>Nombre</b></label><br>
                     <input type="text" id="name" size="50" name="User">
                 </li>
@@ -149,9 +189,9 @@
                     <input type="button" value="Enviar">
                 </li> 
             </td>
-            <td>
+            <td class="mapa">
                 <p>Calle 18 entre 25 y 27. Colonia México. C.P. 97137</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8446078400434!2d-89.60620158511712!3d20.998865186014584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567795bd755da3%3A0xc2b290678541f98b!2sGrupo%20Libera!5e0!3m2!1ses-419!2smx!4v1678390060371!5m2!1ses-419!2smx" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8446078400434!2d-89.60620158511712!3d20.998865186014584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567795bd755da3%3A0xc2b290678541f98b!2sGrupo%20Libera!5e0!3m2!1ses-419!2smx!4v1678390060371!5m2!1ses-419!2smx" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe> 
             </td>
         </tr>
     </table>
