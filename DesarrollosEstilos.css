@@ -40,12 +40,18 @@ body{
     height: 800px;
 }
 
+.santamar{
+    width: 100vw;
+    height: 800px;
+}
+
+
 footer{
     background-color: #174C4F;
     height: 355px;
     width: 100%;
     margin: 0%;
-    padding: 0%;
+    padding:0%;
 }
 
 .contacto{

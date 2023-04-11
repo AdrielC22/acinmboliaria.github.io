@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="MisEstilos.css">
+    <link rel="stylesheet" type="text/css" href="MisEstilos.css">
     <title>Mi página web</title>
 </head>
 
@@ -18,31 +18,34 @@
 </script>
 
 <header>
-    <nav style="margin: 0 auto;">
+    <div>
         <img src="Img/LogoBlanco1.png" alt="Logo" class="img-logo">
+    </div>
+    
+    <nav>
         <ul align = "right" class="menu">
-            <a href="#quiensoy" class="titulo">
+           <li><a href="#quiensoy" class="titulo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" >
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  </svg><p>¿Quién soy?</p></a>
+                  </svg><p>¿Quién soy?</p></a></li>
 
-            <a href="#desarrollos" class="titulo">
+           <li><a href="#desarrollos" class="titulo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
                     <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
-                  </svg><p>Desarrollos</p></a>
+                  </svg><p>Desarrollos</p></a></li>
 
-            <a href="#blog" class="titulo">
+           <li><a href="#blog" class="titulo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal" viewBox="0 0 16 16">
                     <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
                     <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
-                  </svg><p>Blog</p></a>
+                  </svg><p>Blog</p></a></li>
 
-            <a href="#contacto" class="titulo">
+            <li><a href="#contacto" class="titulo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
                     <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
-                  </svg><p>Contacto</p></a>
+                  </svg><p>Contacto</p></a></li>
         </ul>
     </nav>
 </header>
@@ -83,7 +86,7 @@
               </script>
         </td>
         <td>
-            <img src="Img/Portada1.PNG" class="imgportada" align="right">
+            <img src="Img/Portada1.PNG" class="imgportada">
         </td>
     </tr>
    </table>
@@ -128,8 +131,8 @@
             <td><a href="arenales.html"><img src="Img/Arenales-portada.jpg" class="arenales1" alt="Imagen1" height="300px"; width="300px";>
             <p><h4>Arenales</h4></p></td></a>
     
-            <td><img src="Img/Santamar-portada.jpg" class="santamar1" alt="Imagen2" height="300px"; width="300px";>
-            <p><h4>Santamar</h4></p></td>
+            <td><a href="santamar.html"><img src="Img/Santamar-portada.jpg" class="santamar1" alt="Imagen2" height="300px"; width="300px";>
+            <p><h4>Santamar</h4></p></td></a>
         </tr>
 
     </table>
@@ -155,50 +158,36 @@
   AOS.init();
 </script>
 
-</body>
-
-<footer >
 <a id="contacto">
-<div class="contacto" style="text-align: left;">
-    <table style="margin: 0 auto;">
-        <tr>
-            <td><b><h2>Contacto</h2></b></td>
-            <td><b><h2>Ubicación</h2></b></td>
-        </tr>
-        <tr>
-            <td class="datos">
-                <p>
-                    Si quieres una asesoría personalizada y conocer los planes de financiamiento, no dudes en dejar tus datos.De esa manera, me pondré en contacto contigo. 
-                </p>
-                <li align="left" >
-                    <label for="name"><b>Nombre</b></label><br>
-                    <input type="text" id="name" size="50" name="User">
-                </li>
-        
-                <li align="left">
-                    <label for="name"><b>Celular</b></label><br>
-                    <input type="number" id="pass" size="50" name="User">
-                </li>
-        
-                <li align="left">
-                    <label for="name"><b>Correo electrónico</b></label><br>
-                    <input type="text" id="pass" size="50" name="User">
-                </li>
-        
-                <li align="left">
-                    <input type="button" value="Enviar">
-                </li> 
-            </td>
-            <td class="mapa">
+<footer>
+    <div class="footer-container">
+        <div class="columna-form">
+            <h2>Contacto</h2>
+            <p>
+                Si quieres una asesoría personalizada y conocer los planes de financiamiento, no dudes en dejar tus datos.De esa manera, me pondré en contacto contigo. 
+            </p>
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido" required><br>
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" placeholder="Ingrese número de celular" required><br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese correo electrónico" required><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="columna-mapa">
+            <h2>Ubicación</h2>
+            <div id="mapa">
                 <p>Calle 18 entre 25 y 27. Colonia México. C.P. 97137</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8446078400434!2d-89.60620158511712!3d20.998865186014584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567795bd755da3%3A0xc2b290678541f98b!2sGrupo%20Libera!5e0!3m2!1ses-419!2smx!4v1678390060371!5m2!1ses-419!2smx" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe> 
-            </td>
-        </tr>
-    </table>
-</div>
-<div style="text-align: center;">
-    <img src="Img/AC-Logo.png" height="3%" width="3%">
-</div></a>
-</footer>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8446078400434!2d-89.60620158511712!3d20.998865186014584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567795bd755da3%3A0xc2b290678541f98b!2sGrupo%20Libera!5e0!3m2!1ses-419!2smx!4v1678390060371!5m2!1ses-419!2smx" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <img src="Img/AC-Logo.png" height="3%" width="3%">
+    </div>
+</footer></a>
 
+</body>
 </html>
